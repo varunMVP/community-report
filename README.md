@@ -118,3 +118,41 @@ Email: varunthecm@gmail.com
 GitHub: https://github.com/varunMVP
 ## **Folder Structure**
 
+📁 Project Structure
+civic-issue-app/
+│
+├── backend/                          # Server-side (Node.js + Express)
+│   ├── config/
+│   │   └── db.js                     # MongoDB connection configuration
+│   │
+│   ├── models/
+│   │   ├── User.js                   # User database schema (structure)
+│   │   └── Issue.js                  # Issue database schema (structure)
+│   │
+│   ├── routes/
+│   │   ├── auth.js                   # Authentication routes (login/signup)
+│   │   └── issues.js                 # Issue management routes (CRUD operations)
+│   │
+│   ├── middleware/
+│   │   └── auth.js                   # Token verification middleware
+│   │
+│   ├── uploads/                      # Folder for uploaded images
+│   │
+│   ├── .env                          # Environment variables (secrets)
+│   ├── server.js                     # Main server file
+│   └── package.json                  # Backend dependencies list
+│
+└── frontend/                         # Client-side (React)
+    ├── src/
+    │   ├── components/
+    │   │   ├── Login.js              # Login page component
+    │   │   ├── Signup.js             # Signup page component
+    │   │   ├── Dashboard.js          # User dashboard (view issues)
+    │   │   ├── ReportIssue.js        # Form to report new issue
+    │   │   └── AdminDashboard.js     # Admin panel (manage all issues)
+    │   │
+    │   ├── App.js                    # Main app with routing
+    │   ├── App.css                   # Styling for entire app
+    │   └── index.js                  # React entry point
+    │
+    └── package.json                  # Frontend dependencies list
